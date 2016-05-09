@@ -2,8 +2,8 @@
 set -eu
 
 #init VM and connect
-vagrant box add hashicorp/precise64
-vagrant init precise64 hashicorp/precise64 #changes default 'vagrant init' with 'config.vm.box = "hashicorp/precise64"'
+vagrant box add ubuntu/trusty64
+vagrant init ubuntu-14.04 ubuntu/trusty64 #changes default 'vagrant init' with 'config.vm.box = "ubuntu/trusty64"'
 
 #start VM
 vagrant up
